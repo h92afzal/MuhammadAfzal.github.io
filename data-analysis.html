@@ -1,0 +1,694 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Muhammad Afzal Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+      <!-- Intro -->
+      <div id="intro">
+        <h1>Muhammad Afzal<br />Data Analyst <br/>Portfolio Projects</h1>
+        <p>
+          Results-driven Data Analyst with 6+ years of experience designing cloud-native pipelines, machine learning models, and analytics solutions. 
+          Skilled in Python, SQL, GCP, AWS, Azure, and Databricks, with a proven record of improving data accuracy, reducing reporting errors, and automating workflows. 
+          Adept at transforming complex datasets into actionable insights that drive business growth and smarter decision-making.
+          <a href="https://www.linkedin.com/in/muhammad-afzal-7594581a9/">@MuhammadAfzal</a>
+        </p>
+        <ul class="actions">
+          <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+        </ul>
+      </div>
+
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Muhammad Afzal</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="index.html">Projects</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/muhammad-afzal-7594581a9/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/h92afzal?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+      </nav>
+
+<!-- Main -->
+<div id="main">
+
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/HL7_analytics_engineering" target="_blank">
+          HL7 FHIR Healthcare Analytics & Risk Stratification Platform
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        HL7 FHIR (JSON), Python (FHIR Parsing & Data Validation),
+        PostgreSQL (Raw/Staging/Analytics Schemas, CTEs, Window Functions),
+        SQL (Feature Engineering & Risk Scoring),
+        Streamlit (Interactive Dashboard),
+        Data Modeling & Cohort Analytics
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Designed and implemented an end-to-end healthcare data engineering platform
+        using HL7 FHIR clinical data. Built a layered PostgreSQL architecture
+        (raw, staging, analytics), normalized nested FHIR resources into relational
+        schemas, created chronic disease cohorts, engineered patient-level features,
+        and implemented a rule-based risk scoring framework for population health
+        stratification. Delivered a multi-page Streamlit dashboard covering
+        population overview, diabetic vs non-diabetic comparison, and high-risk
+        patient deep dive. The project demonstrates production-style data pipelines,
+        healthcare modeling decisions, and actionable analytics from interoperability
+        standards.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/HL7_analytics_engineering" target="_blank">
+          <img
+            src="images/hl7-architecture.png"
+            alt="HL7 FHIR Healthcare Analytics Architecture Diagram"
+          />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/Claims_Denial_Root_Cause_Analyzer" target="_blank">
+          Claims Denial Root Cause Analyzer (Healthcare Analytics)
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        PostgreSQL, SQL (CTEs, Window Functions), Python (Data Cleaning),
+        Power BI (Multi-page Dashboard)
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Built an end-to-end healthcare analytics project using CMS SynPUF claims data
+        to analyze claim denials. Cleaned and standardized inpatient, outpatient, and
+        beneficiary data in Python, modeled a star schema in PostgreSQL, and designed
+        a Power BI report covering executive metrics, denial root causes, provider and
+        operational performance, and patient risk and equity analysis. The project
+        emphasizes realistic modeling decisions, data-driven risk segmentation, and
+        decision-ready insights.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/Claims_Denial_Root_Cause_Analyzer" target="_blank">
+          <img
+            src="images/analytic_dashboard.png"
+            alt="Claims Denial Root Cause Analyzer Dashboard (Power BI)"
+          />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+
+  
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/Claims_Denial_Root_Cause_Analysis" target="_blank">
+          Claims Denial Root Cause Analyzer
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        PostgreSQL, SQL (CTEs, Window Functions), Python (pandas, numpy, SQLAlchemy),
+        Power BI (Dashboards), Streamlit (Demo App), CMS SynPUF (Synthetic Claims Data)
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Built an end-to-end revenue cycle analytics project to analyze medical claims and uncover denial drivers.
+        Cleaned and modeled CMS SynPUF inpatient/outpatient claims into analytics-ready fact/dimension tables in PostgreSQL,
+        generated realistic synthetic denials at the claim-line level using interpretable risk drivers (provider, procedure, eligibility, timely filing),
+        and created optimized marts and views to support fast BI (denial trends, provider/category heatmaps, CPT/ICD driver analysis, and a high-risk worklist).
+        Delivered both Power BI dashboards and a Streamlit demo to track denial trends, quantify financial impact, and prioritize high-risk claims for action.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/Claims_Denial_Root_Cause_Analysis" target="_blank">
+          <img src="images/claims_dashboard.png"
+               alt="Claims Denial Root Cause Analysis Dashboard (Power BI + Streamlit)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+
+
+
+  
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/Health_Care_Analytics" target="_blank">
+          HL7 v2 Healthcare Analytics & Interface Monitoring
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        PostgreSQL, SQL (CTEs, Window Functions), Python (HL7 Parsing),
+        Power BI (Dashboards), Synthea (Synthetic Healthcare Data)
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Built an end-to-end healthcare analytics project simulating a real HL7 v2 interface pipeline.
+        Generated and parsed ADT^A01 and ORU^R01 messages from synthetic clinical data,
+        normalized patient, encounter, and observation records into analytics-ready PostgreSQL tables,
+        and implemented message-level reconciliation using MSH-10 control IDs.
+        Added data quality rules to detect logical and temporal inconsistencies,
+        and designed Power BI dashboards to monitor interface health, clinical observations,
+        and data quality with drill-down capabilities.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/Health_Care_Analytics" target="_blank">
+          <img src="images/dashboard_hl7_interface.png"
+               alt="HL7 Interface Health, Observation Analytics, and Data Quality Dashboard (Power BI)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/Lead_to_Lease_Funnel" target="_blank">
+          Leasing Funnel Analysis (SQL + Excel)
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>PostgreSQL, SQL (Joins, Aggregations), Python (Polars), Power BI (Dashboard)</td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Built an end-to-end analytics project using a realistic leasing funnel dataset.
+        Cleaned messy CSVs, enforced relational integrity across leads, tours, leases, and properties,
+        wrote SQL queries for funnel conversion metrics and trends, and designed an Excel dashboard
+        with KPIs (Lead → Tour, Lead → Lease) and source/month breakdowns.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/Lead_to_Lease_Funnel" target="_blank">
+          <img src="images/dashboard_leasing_funnel.png" alt="Leasing Funnel Dashboard (Excel + SQL)" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+
+  <article class="project-card">
+    <table class="project-table">
+      <tr>
+        <th>Project</th>
+        <td>
+          <a href="https://github.com/92-afzal/saas_analytics" target="_blank">
+            SaaS KPI Dashboard – Revenue, Growth & Churn Analytics
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Tools Used</th>
+        <td>Python (Pandas), SQL (PostgreSQL), Power BI</td>
+      </tr>
+
+      <tr>
+        <th>Description</th>
+        <td>
+          Built an end-to-end SaaS analytics solution starting from raw, messy data.
+          Performed data cleaning and validation using Python and SQL, defined KPI
+          logic for MRR, churn, and customer growth, and designed an executive-level
+          dashboard to support data-driven decision-making. Documented data
+          assumptions, quality limitations, and edge case handling to ensure
+          reliable and transparent reporting.
+        </td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td>
+          <a href="https://github.com/92-afzal/saas_analytics" target="_blank">
+            <img src="images/dashboard_saas.png" alt="SaaS KPI Dashboard" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </article>
+
+  <article class="project-card">
+    <table class="project-table">
+      <tr>
+        <th>Project</th>
+        <td>
+          <a href="https://github.com/92-afzal/DataAnalysis" target="_blank">
+            Business Intelligence Dashboard for Retail Sales Performance
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Tools Used</th>
+        <td>Python, SQL, Power BI, DAX</td>
+      </tr>
+
+      <tr>
+        <th>Description</th>
+        <td>
+          Built an end-to-end BI solution to analyze retail sales performance.
+          Performed data cleaning, SQL transformations, DAX modeling, and
+          created interactive dashboards to track KPIs and trends.
+        </td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td>
+          <a href="https://github.com/92-afzal/DataAnalysis" target="_blank">
+            <img src="images/Exective_summary.png" alt="Retail Sales Dashboard" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </article>
+
+  <article class="project-card">
+    <table class="project-table">
+      <tr>
+        <th>Project</th>
+        <td>
+          <a href="https://github.com/h92afzal/PortfolioProjects/blob/main/DataCleaningPrectSQL.sql" target="_blank">
+            Elegant Data Cleaning Techniques in SQL (Housing Dataset)
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Tools Used</th>
+        <td>SQL Server, MySQL, Window Functions, CTEs, String Functions</td>
+      </tr>
+
+      <tr>
+        <th>Description</th>
+        <td>
+          Performed comprehensive data cleaning and transformation on a housing dataset
+          using advanced SQL techniques. Standardized date formats, removed duplicates,
+          handled missing values, split and normalized address fields, and applied CTEs
+          and window functions to improve data quality and query efficiency for analysis
+          and reporting.
+        </td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td>
+          <a href="https://github.com/h92afzal/PortfolioProjects/blob/main/DataCleaningPrectSQL.sql" target="_blank">
+            <img src="images/housing.jpg" alt="SQL Data Cleaning Housing Project" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </article>
+
+  <section class="posts">
+
+    <article class="project-card">
+      <table class="project-table">
+        <tr>
+          <th>Project</th>
+          <td>
+            <a href="https://github.com/92-afzal/LookerStudio-Projects" target="_blank">
+              Looker Studio Marketing & Performance Dashboards
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Tools Used</th>
+          <td>Looker Studio, Google Analytics, Google Ads, SQL, Google Sheets</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Designed interactive Looker Studio dashboards to monitor marketing performance
+            metrics including ad spend, impressions, clicks, and conversions.
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <a href="https://github.com/92-afzal/LookerStudio-Projects" target="_blank">
+              <img src="images/dashboard.png" alt="Looker Studio Marketing Dashboard" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+    <article class="project-card">
+      <table class="project-table">
+        <tr>
+          <th>Project</th>
+          <td>
+            <a href="https://github.com/92-afzal/Excel_HealthCare_Project" target="_blank">
+              Hospital ER Performance Dashboard (Excel)
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Tools Used</th>
+          <td>Microsoft Excel, Pivot Tables, Power Query, Charts, KPI Metrics</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Built an end-to-end Excel-based dashboard to monitor emergency room performance.
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <a href="https://github.com/92-afzal/Excel_HealthCare_Project" target="_blank">
+              <img src="images/er.jpg" alt="Hospital ER Excel Dashboard" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+    <article class="project-card">
+      <table class="project-table">
+        <tr>
+          <th>Project</th>
+          <td>
+            <a href="https://github.com/h92afzal/PortfolioProjects/blob/main/PortfolioProject.sql" target="_blank">
+              COVID-19 Data Exploration and Analysis in SQL
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Tools Used</th>
+          <td>SQL Server, Joins, CTEs, Window Functions, Aggregations</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Conducted exploratory analysis on global COVID-19 datasets using SQL.
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <a href="https://github.com/h92afzal/PortfolioProjects/blob/main/PortfolioProject.sql" target="_blank">
+              <img src="images/covid.jpeg" alt="COVID-19 SQL Data Exploration" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+    <article class="project-card">
+      <table class="project-table">
+        <tr>
+          <th>Project</th>
+          <td>
+            <a href="https://github.com/h92afzal/SQL_mySql_projects/blob/main/practice_Queries.sql" target="_blank">
+              Exploration of Advanced SQL Queries
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Tools Used</th>
+          <td>MySQL, SQL Server, Joins, Subqueries, CTEs, Window Functions</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Developed a collection of advanced SQL queries to solve real-world data analysis problems.
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <a href="https://github.com/h92afzal/SQL_mySql_projects/blob/main/practice_Queries.sql" target="_blank">
+              <img src="images/sqlqueries.png" alt="Advanced SQL Queries Project" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+    <article class="project-card">
+      <table class="project-table">
+        <tr>
+          <th>Project</th>
+          <td>
+            <a href="https://github.com/h92afzal/PowerBI_Project" target="_blank">
+              Power BI Dashboards and Analytics Projects
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Tools Used</th>
+          <td>Power BI, DAX, Power Query, SQL, Data Modeling</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Developed a collection of interactive Power BI dashboards and analytics reports.
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <a href="https://github.com/h92afzal/PowerBI_Project" target="_blank">
+              <img src="images/PowerBi.png" alt="Power BI Analytics Dashboards" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+    <article class="project-card">
+      <table class="project-table">
+        <tr>
+          <th>Project</th>
+          <td>
+            <a href="https://public.tableau.com/app/profile/muhammad.afzal4698/vizzes" target="_blank">
+              Tableau Public Interactive Dashboards
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Tools Used</th>
+          <td>Tableau, Calculated Fields, LOD Expressions, Data Visualization Best Practices</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Created interactive dashboards in Tableau Public to explore and communicate insights.
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <a href="https://public.tableau.com/app/profile/muhammad.afzal4698/vizzes" target="_blank">
+              <img src="images/tableau.png" alt="Tableau Interactive Dashboards" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+    <article class="project-card">
+      <table class="project-table">
+        <tr>
+          <th>Project</th>
+          <td>
+            <a href="https://github.com/h92afzal/PythonProjects" target="_blank">
+              Python Projects for Data Analytics and Automation
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Tools Used</th>
+          <td>Python, Pandas, NumPy, Matplotlib, Automation Scripts</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Collection of Python projects focused on analytics, visualization, and automation scripts.
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <a href="https://github.com/h92afzal/PythonProjects" target="_blank">
+              <img src="images/python-logo.png" alt="Python Data Analytics Projects" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+    <article class="project-card">
+      <table class="project-table">
+        <tr>
+          <th>Project</th>
+          <td>
+            <a href="https://github.com/h92afzal/Excel-Projs" target="_blank">
+              Excel Projects for Dashboards, Automation, and Reporting
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Tools Used</th>
+          <td>Microsoft Excel, Power Query, Pivot Tables, Formulae, VBA</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Excel portfolio focused on dashboarding, reporting, and workflow automation.
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <a href="https://github.com/h92afzal/Excel-Projs" target="_blank">
+              <img src="images/excel_logo.jpg" alt="Excel Dashboards and Automation Projects" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </article>
+
+  </section>
+
+</div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Address</h3>
+            <p>Ghazi Road<br />Lahore, Pakistan 54000</p>
+          </section>
+          <section>
+            <h3>Phone</h3>
+            <p><a href="#">(+92) 322-5353731</a></p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="#">092afzal@gmail.com</a></p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li><a href="https://www.linkedin.com/in/muhammad-afzal-7594581a9/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+              <li><a href="https://github.com/h92afzal?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul><li>&copy; Muhammad Afzal</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+</html>
+
+
+
+
+
+
+

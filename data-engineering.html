@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Muhammad Afzal Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+      <!-- Intro -->
+      <div id="intro">
+        <h1>Muhammad Afzal<br />Data Engineer <br/>Portfolio Projects</h1>
+        <p>
+          Results-driven Data Engineer with 6+ years of experience designing cloud-native pipelines, machine learning models, and analytics solutions. 
+          Skilled in Python, SQL, GCP, AWS, Azure, Snowflake and Databricks, with a proven record of improving data accuracy, reducing reporting errors, and automating workflows. 
+          Adept at transforming complex datasets into actionable insights that drive business growth and smarter decision-making.
+          <a href="https://www.linkedin.com/in/muhammad-afzal-7594581a9/">@MuhammadAfzal</a>
+        </p>
+        <ul class="actions">
+          <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+        </ul>
+      </div>
+
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Muhammad Afzal</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="index.html">Projects</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/muhammad-afzal-7594581a9/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/h92afzal?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+      </nav>
+
+<!-- Main -->
+<div id="main">
+
+  <article class="project-card">
+  <table class="project-table">
+    
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/retail_lakehouse_project" target="_blank">
+          Retail Lakehouse (Databricks + Delta Lake) – Incremental Medallion Pipeline
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        Databricks, Delta Lake, Unity Catalog, PySpark, SQL, Medallion Architecture,
+        Incremental Processing, SCD Type 2, Power BI, Data Quality & Observability
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Designed and implemented a production-style Retail Lakehouse architecture
+        using Databricks and Delta Lake. Built a scalable Bronze → Silver → Gold
+        data pipeline with incremental data processing and file tracking.
+        
+        Developed PySpark-based ingestion pipelines for raw data loading into
+        Delta tables, applied data cleaning, validation, and deduplication logic
+        in the Silver layer, and created business-ready dimension and fact tables
+        in the Gold layer using SCD Type 2 for historical tracking.
+        
+        Implemented audit logging, reject handling, and data quality checks to
+        ensure pipeline reliability and observability. Optimized the system for
+        analytics use cases, enabling dashboard-ready datasets for revenue trends,
+        customer insights, and product performance reporting.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/retail_lakehouse_project" target="_blank">
+          <img src="images/3.jpeg" alt="Retail Lakehouse Databricks Architecture" />
+        </a>
+      </td>
+    </tr>
+
+  </table>
+</article>
+
+<article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/retail_principal_data_lakehouse_proj.git" target="_blank">
+          Azure Databricks Lakehouse – End-to-End Retail Data Pipeline
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        Azure Databricks, Unity Catalog, Azure Data Lake Storage Gen2, PySpark, SQL, Delta Lake, Medallion Architecture, Azure IAM
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Designed and implemented a modern Azure Lakehouse architecture using
+        Azure Databricks and Unity Catalog to process retail transaction data.
+        Built a scalable Bronze → Silver → Gold data pipeline ingesting the
+        Online Retail dataset into Azure Data Lake Storage Gen2. Implemented
+        governed storage access using Databricks Access Connector, Storage
+        Credentials, and External Locations. Developed PySpark ingestion
+        pipelines converting raw CSV data into Delta tables, applied data
+        cleaning and transformation logic in the Silver layer, and created
+        aggregated business-ready analytics tables in the Gold layer for
+        revenue analysis and country-level sales insights.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/retail_principal_data_lakehouse_proj.git" target="_blank">
+          <img src="images/lakehouse-architecture.png" alt="Azure Databricks Lakehouse Architecture" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+  
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/End-to-End-Cloud-Data-Warehouse-Modernization-Snowflake-" target="_blank">
+          End-to-End Cloud Data Warehouse Modernization (Snowflake)
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        Snowflake, SQL, Stored Procedures, Dimensional Modeling, SCD Type 2, Docker, PostgreSQL, Power BI
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Designed and implemented a production-style cloud data warehouse integrating
+        transactional e-commerce data (Olist) and high-volume behavioral clickstream
+        data (20M+ events). Built a layered RAW → STAGING → MART architecture in
+        Snowflake, implemented SCD Type 2 dimensions with row hashing, and developed
+        an incremental stored procedure pipeline with watermark tracking, duplicate
+        protection, safety validation, and load logging. Modeled separate star schemas
+        for transactional and behavioral domains, engineered session-level funnel
+        analytics, and created executive-ready monthly KPI marts including conversion
+        rate, cart abandonment, and revenue metrics.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/End-to-End-Cloud-Data-Warehouse-Modernization-Snowflake-" target="_blank">
+          <img src="images/ecommerce-architecture.png" alt="Snowflake E-commerce Data Warehouse Architecture" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/FHIR_R4_HL7_PIPEELINE" target="_blank">
+          FHIR R4 Data Lake → Snowflake Analytics Warehouse Pipeline
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        Snowflake, Python, AWS S3, FHIR R4, SQL, YAML, GitHub Actions, Synthea FHIR JSON
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Built an end-to-end healthcare data engineering pipeline that ingests raw FHIR R4
+        JSON bundles from Amazon S3 into Snowflake using external stages and storage
+        integrations. Implemented a structured RAW → STG → DWH architecture with JSON
+        normalization, UUID reference resolution, and star schema modeling. Designed
+        a fact_observation table joined to SCD Type 2 patient and date dimensions,
+        implemented incremental MERGE logic, enforced referential integrity validation,
+        and built an A/B SQL regression testing framework to safely refactor
+        transformations. The pipeline is environment-driven, idempotent, and CI-ready.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/FHIR_R4_HL7_PIPEELINE" target="_blank">
+          <img src="images/fhir_pipeline_architecure.png" alt="FHIR R4 Snowflake Analytics Architecture" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/HL7_Analytic_Engineering" target="_blank">
+          Scalable HL7 Healthcare Data Platform (Snowflake + dbt)
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>
+        Snowflake, dbt, AWS S3, Snowflake Streams, Snowflake Tasks, SQL, Synthea FHIR JSON
+      </td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Designed and implemented a production-style healthcare analytics platform using a
+        Medallion architecture (Bronze → Silver → Gold). Raw FHIR JSON data is ingested from
+        AWS S3 into Snowflake using Streams and Tasks, transformed incrementally with dbt,
+        and modeled into a star schema with surrogate keys. Implemented SCD Type 2
+        snapshots for patient history tracking, SLA monitoring for pipeline latency,
+        clustering for performance optimization, and analytics-ready KPI models including
+        admission rates and observation volume.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/HL7_Analytic_Engineering" target="_blank">
+          <img src="images/hl7_de_architecture.png" alt="HL7 Healthcare Data Platform Architecture" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+  <article class="project-card">
+  <table class="project-table">
+    <tr>
+      <th>Project</th>
+      <td>
+        <a href="https://github.com/92-afzal/claim_denail_data_engineering_proj" target="_blank">
+          Claims Data Pipeline & Warehouse (Healthcare Analytics)
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tools Used</th>
+      <td>AWS S3, Snowflake, SQL, Snowflake Notebooks</td>
+    </tr>
+
+    <tr>
+      <th>Description</th>
+      <td>
+        Designed and implemented a production-style data engineering pipeline for
+        healthcare claims data. Built an end-to-end ELT workflow that ingests raw
+        multi-year inpatient, outpatient, and beneficiary data from S3 into Snowflake,
+        standardizes it using layered schemas (RAW, STG, DWH), and models it into a
+        star schema for analytics. Implemented derived denials using payment logic,
+        handled complex healthcare codes (DRG, ICD-9, HCPCS), and ensured idempotent
+        processing with MERGE-based loads and data quality checks.
+      </td>
+    </tr>
+
+    <tr>
+      <th></th>
+      <td>
+        <a href="https://github.com/92-afzal/claim_denail_data_engineering_proj" target="_blank">
+          <img src="images/architecture.png" alt="Claims Data Pipeline Architecture" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</article>
+
+
+  <article class="project-card">
+    <table class="project-table">
+      <tr>
+        <th>Project</th>
+        <td>
+          <a href="https://github.com/92-afzal/hospital-patient-flow-analytics/tree/main/databricks-notebooks" target="_blank">
+            ETL Using Medallion Architecture (Hospital Patient Flow Analytics)
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Tools Used</th>
+        <td>Azure Event Hub, Azure Databricks, PySpark, Delta Lake, Azure SQL</td>
+      </tr>
+
+      <tr>
+        <th>Description</th>
+        <td>
+          Designed and implemented an end-to-end streaming ETL pipeline for hospital
+          patient flow analytics using the Medallion Architecture (Bronze, Silver, Gold).
+          Ingested real-time data from Azure Event Hub, applied data cleansing and
+          transformations in Databricks, and persisted curated datasets into optimized
+          SQL tables for downstream analytics and reporting.
+        </td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td>
+          <a href="https://github.com/92-afzal/hospital-patient-flow-analytics/tree/main/databricks-notebooks" target="_blank">
+            <img src="images/patient_flow.jpeg" alt="Hospital Patient Flow Medallion Architecture" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </article>
+
+  <article class="project-card">
+    <table class="project-table">
+      <tr>
+        <th>Project</th>
+        <td>
+          <a href="https://github.com/92-afzal/azure_end_to_end_projects" target="_blank">
+            Azure End-to-End Synapse Analytics ETL Pipeline
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Tools Used</th>
+        <td>Azure Data Factory, Azure Databricks, Azure Synapse Analytics, Power BI, SQL</td>
+      </tr>
+
+      <tr>
+        <th>Description</th>
+        <td>
+          Implemented a full end-to-end ETL pipeline starting from an on-premises database
+          and moving through Azure Data Factory for ingestion, Databricks for transformation,
+          and Azure Synapse Analytics for data warehousing. Delivered analytics-ready
+          datasets consumed by Power BI dashboards for reporting and insights.
+        </td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td>
+          <a href="https://github.com/92-afzal/azure_end_to_end_projects" target="_blank">
+            <img src="images/image.png" alt="Azure Synapse Analytics ETL Pipeline" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </article>
+
+  <article class="project-card">
+    <table class="project-table">
+      <tr>
+        <th>Project</th>
+        <td>
+          <a href="https://github.com/92-afzal/real_time_streaming_and_anlytics" target="_blank">
+            Real-Time Streaming and Analytics Pipeline
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Tools Used</th>
+        <td>Apache Kafka, Spark Structured Streaming, Snowflake, Streamlit, Python</td>
+      </tr>
+
+      <tr>
+        <th>Description</th>
+        <td>
+          Built a real-time data streaming and analytics pipeline using Kafka for event
+          ingestion and Spark Structured Streaming for processing. Leveraged Snowflake
+          Streams and Tasks for incremental data handling and exposed real-time insights
+          through an interactive Streamlit dashboard.
+        </td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td>
+          <a href="https://github.com/92-afzal/real_time_streaming_and_anlytics" target="_blank">
+            <img src="images/logo.png" alt="Kafka Spark Snowflake Streaming Pipeline" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </article>
+
+</div>
+
+
+<!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Address</h3>
+            <p>Ghazi Road<br />Lahore, Pakistan 54000</p>
+          </section>
+          <section>
+            <h3>Phone</h3>
+            <p><a href="#">(+92) 322-5353731</a></p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="#">092afzal@gmail.com</a></p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li><a href="https://www.linkedin.com/in/muhammad-afzal-7594581a9/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+              <li><a href="https://github.com/h92afzal?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul><li>&copy; Muhammad Afzal</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+</html>
+
+
+
+
+
+
+
